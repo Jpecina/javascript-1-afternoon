@@ -17,7 +17,14 @@ var name = 'Tyler';
   If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 */
 
-//Code Here
+function isTyler(peram){
+  if(peram === "Tyler"){
+    return true;
+  }
+  else{
+    return false
+  }
+};
 
 
 
@@ -27,8 +34,9 @@ var name = 'Tyler';
   Create a function called getName that uses prompt() to prompt the user for their name and then returns the given name.
 */
 
-//Code Here
-
+function getName(name){
+  return name = prompt();
+};
 
 
 ////////// PROBLEM 3 //////////
@@ -40,7 +48,9 @@ var name = 'Tyler';
   Example: "Welcome, Bob Joe"
 */
 
-//Code Here
+/*function welcome(name){
+return name + " " + getName();
+};
 
 
 
@@ -50,7 +60,8 @@ var name = 'Tyler';
   What is the difference between arguments and parameters?
 */
 
-//Answer Here
+"arguments are passed in"
+"parameters are place holder"
 
 
 
@@ -60,7 +71,11 @@ var name = 'Tyler';
   What are all the falsy values in JavaScript and how do you check if something is falsy?
 */
 
-//Answer Here
+false
+null
+0
+undefined
+"no string"
 
 
 
@@ -70,15 +85,16 @@ var name = 'Tyler';
   Create a function called myName that returns your name
 */
 
-//Code Here
-  
+function myName(){
+  return "juan";
+};
 
 
 /*
   Now save the function definition of myName into a new variable called newMyName
 */
 
-//Code Here
+newMyName = myName;
 
 
 
@@ -86,7 +102,7 @@ var name = 'Tyler';
   Now alert the result of invoking newMyName
 */
 
-// Code Here
+/*alert(newMyName);
 
 
 
@@ -96,7 +112,11 @@ var name = 'Tyler';
   Create a function called outerFn which returns an anonymous function which returns your name.
 */
 
-//Code Here
+function outerFn(){
+  return function(){
+    return "juan"
+  }
+};
 
 
 
@@ -104,7 +124,7 @@ var name = 'Tyler';
   Now save the result of invoking outerFn into a variable called innerFn.
 */
 
-//Code Here
+let innerFn = outerFn();
 
 
 
